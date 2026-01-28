@@ -1,0 +1,171 @@
+<html>
+<head><title>JS</title>
+  <style lang="css">
+ .calc{
+   background-color:black;
+   height:375px;
+   width:300px;
+   border-radius:25px;
+   margin-left:25px;
+   border:3px solid #4682B4;
+ }
+  
+  #button{
+    height:60px;
+    width:270px;
+    background-color:#ADD8E6;
+    border-radius:5px;
+   margin-left:15px;
+    margin-top:40px;
+    font-size:40px;
+  }
+ 
+ #but1{
+   border-radius:10px;
+   background-color:grey;
+   height:45px;
+   width:45px;
+   margin-left:20px;
+    margin-top:15px;
+ }
+ 
+  #but1:hover{
+    border:2px solid yellow;
+  }
+  #but2{
+   border-radius:10px;
+   background-color:#D8BFD8;
+   height:45px;
+   width:45px;
+   margin-left:20px;
+    margin-top:15px;
+ }
+  #but2:hover{
+    border:2px solid red;
+  }
+  #but3{
+   border-radius:10px;
+   background-color:red;
+   height:45px;
+   width:45px;
+   margin-left:20px;
+    margin-top:15px;
+    border:2px solid red;
+ }
+ 
+  
+  </style>
+  <script language="JavaScript">
+  function calc()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 1 ;
+  }
+  function calc2()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 2 ;
+  }
+  function calc3()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 3 ;
+  }
+  
+  function sum()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + "+" ;
+  
+  }
+  function calc4()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 4 ;
+  }
+  function calc5()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 5 ;
+  }
+  function calc6()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 6 ;
+  }
+  function calc7()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 7 ;
+  }
+  function calc8()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 8;
+  }
+  function calc9()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 9;
+  }
+  function calc0()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + 0 ;
+  }
+  
+  function diff()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + "-" ;
+  }
+  function mult()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + "*" ;
+  }
+  function div()
+  {
+  var add = document.form1.button.value;
+  document.form1.button.value = add + "/" ;
+  }
+  
+  function clearpage()
+  {
+    var clear = document.form1.button.value;
+  document.form1.button.value = " ";
+  }
+  
+  function equalto()
+  {
+    var ans = eval(button.value);
+    document.form1.button.value = ans;
+  }
+  </script>
+</head>
+<body bgcolor="lavender" text="black">
+  <h2 align="center">CALCULATOR</h2>
+  <form name="form1">
+  <div class="calc">
+    <input type="button"  id="button" name="button">
+    <input type="button" id="but1" name="but1" value="1" onclick="calc()">
+    <input type="button" id="but1" name="but1" value="2" onclick="calc2()">
+    <input type="button" id="but1" name="but1" value="3" onclick="calc3()">
+     <input type="button" id="but2" name="but1" value="+" onclick="sum()">
+     <input type="button" id="but1" name="but1" value="4" onclick="calc4()">
+     <input type="button" id="but1" name="but1" value="5" onclick="calc5()">
+     <input type="button" id="but1" name="but1" value="6" onclick="calc6()">
+     <input type="button" id="but2" name="but1" value="-" onclick="diff()">
+     <input type="button" id="but1" name="but1" value="7" onclick="calc7()">
+     <input type="button" id="but1" name="but1" value="8" onclick="calc8()">
+     <input type="button" id="but1" name="but1" value="9" onclick="calc9()">
+     <input type="button" id="but2" name="but1" value="*" onclick="mult()">
+      <input type="button" id="but1" name="but1" value="0" onclick="calc0()">
+     <input type="button" id="but3" name="but1" value="clr" onclick="clearpage()">
+     <input type="button" id="but2" name="but1" value="=" onclick="equalto()">
+     <input type="button" id="but2" name="but1" value="/" onclick="div()">
+    </div>
+  </form>
+  </script>
+</body>
+</html>
