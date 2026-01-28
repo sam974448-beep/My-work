@@ -1,0 +1,530 @@
+<html>
+<head>
+  <title>ScoreFinderorg</title>
+  <style lang="css">
+   fieldset{
+    width:400px;
+    border:2px solid green;
+   }
+ .but{
+  font-size:15px;
+  width:90px;
+  height:30px;
+  border: 2px solid black
+ }
+ .but2{
+  font-size:20px;
+  width:70px;
+  height:40px;
+  border: 2px solid red;
+ }
+.smbut{
+ height:20px;
+ width:30px;
+ font-size:10px;
+ border:2px solid grey;
+ border-radius:50px;
+ 
+}
+ .clr{
+  border:2px solid purple;
+ }
+ .clr:hover{
+  background-color:red;
+  border:2px solid white;
+  color:white;
+ }
+ .clrsp{
+  border:2px solid white;
+  background-color:pink;
+ }
+.clrsp:hover{
+  color:white;
+  background-color:red;
+}
+ .smbut:hover{
+  background-color:lightgreen;
+  border:2px solid white;
+ }
+ .dropbtn {
+  background-color:grey;
+  color: white;
+  position:relative;
+  font-size:20px;
+  width:40px;
+  height:40px;
+  border-radius:50px;
+  border:2px solid black; 
+  margin-left:280px;
+  margin-top:-810px;
+  overflow:auto;
+ 
+}
+ .dropdown {
+  position: absolute;
+  display: inline-block;
+}
+.dropdown-content{
+ display : none;
+ position:absolute;
+ background-color:white;
+ min-width:140px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+ dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;
+ margin-left:280px;
+  margin-top:10px;
+}
+
+.dropdown:hover .dropbtn {background-color:lightgreen;
+ color:black;
+}
+ 
+.dropbut{
+     width:160px;
+     height:40px;
+     background-color:white;
+     border:2px solid white;
+     font-size:15px;
+     font-family:serif;
+}
+.dropbut:hover{
+ background-color:grey;
+}
+ #color{
+visibility:hidden;  
+ }
+ 
+ 
+  </style>
+  <script language="JavaScript">
+  function clearbox(){
+   var sc= document.form.text2.value;
+   document.form.text2.value = " ";
+   
+  }
+ 
+  function addone1(){
+   var val= Number(document.form.text2.value);
+   var adde=Number(document.form.but1.value);
+   document.form.text2.value = val+adde;
+  }
+ function addhalf1(){
+   var val= Number(document.form.text2.value);
+   var adhf=Number(document.form.half1.value);
+   document.form.text2.value = val+adhf;
+  }
+ function minusehalf1(){
+   var val= Number(document.form.text2.value);
+   var mhf=Number(document.form.minu1.value);
+   document.form.text2.value =val+(mhf);
+  }
+ function minusehalf2(){
+   var val= Number(document.form.text4.value);
+  var mhf=Number(document.form.minu1.value);
+   document.form.text4.value = val+mhf;
+  }
+ function minusehalf3(){
+   var val= Number(document.form.text6.value);
+  var mhf=Number(document.form.minu1.value);
+   document.form.text6.value = val+mhf;
+  }
+ function minusehalf4(){
+   var val= Number(document.form.text8.value);
+   var mhf=Number(document.form.minu1.value);
+   document.form.text8.value = val+mhf;
+  }
+ function minusehalf5(){
+   var val= Number(document.form.text10.value);
+   var mhf=Number(document.form.minu1.value);
+   document.form.text10.value = val+mhf;
+  }
+ function minusehalf6(){
+   var val= Number(document.form.text12.value);
+   var mhf=Number(document.form.minu1.value);
+   document.form.text12.value = val+mhf;
+  }
+ function minusehalf7(){
+   var val= Number(document.form.text14.value);
+  var mhf=Number(document.form.minu1.value);
+   document.form.text14.value = val+mhf;
+  }
+ function minusehalf8(){
+   var val= Number(document.form.text16.value);
+  var mhf=Number(document.form.minu1.value);
+   document.form.text16.value = val+mhf;
+  }
+ function minusehalf9(){
+   var val= Number(document.form.text18.value);
+  var mhf=Number(document.form.minu1.value);
+   document.form.text18.value = val+mhf;
+ }
+ function minusehalf10(){
+   var val= Number(document.form.text20.value);
+  var mhf=Number(document.form.minu1.value);
+   document.form.text20.value = val+mhf;
+  }
+ 
+ function addone2(){
+   var val= Number(document.form.text4.value);
+   var adde=Number(document.form.but2.value);
+   document.form.text4.value = val+adde;
+  }
+ function addhalf2(){
+   var val= Number(document.form.text4.value);
+   var adhf=Number(document.form.half2.value);
+   document.form.text4.value = val+adhf;
+  }
+ 
+ function addone3(){
+   var val= Number(document.form.text6.value);
+  var adde=Number(document.form.but3.value);
+   document.form.text6.value = val+adde;
+  }
+ function addhalf3(){
+   var val= Number(document.form.text6.value);
+   var adhf=Number(document.form.half3.value);
+   document.form.text6.value = val+adhf;
+  }
+ function addone4(){
+   var val= Number(document.form.text8.value);
+   var adde=Number(document.form.but4.value);
+   document.form.text8.value = val+adde;
+  }
+ function addhalf4(){
+   var val= Number(document.form.text8.value);
+  var adhf=Number(document.form.half4.value);
+   document.form.text8.value = val+adhf;
+  }
+ function addone5(){
+   var val= Number(document.form.text10.value);
+   var adde=Number(document.form.but5.value);
+   document.form.text10.value = val+adde;
+  }
+ function addhalf5(){
+   var val= Number(document.form.text10.value);
+  var adhf=Number(document.form.half5.value);
+   document.form.text10.value = val+adhf;
+  }
+ function addone6(){
+   var val= Number(document.form.text12.value);
+   var adde=Number(document.form.but6.value);
+   document.form.text12.value = val+adde;
+  }
+ function addhalf6(){
+   var val= Number(document.form.text12.value);
+  var adhf=Number(document.form.half6.value);
+   document.form.text12.value = val+adhf;
+  }
+  
+ function addone7(){
+   var val= Number(document.form.text14.value);
+   var adde=Number(document.form.but7.value);
+   document.form.text14.value = val+adde;
+  }
+ function addhalf7(){
+   var val= Number(document.form.text14.value);
+  var adhf=Number(document.form.half7.value);
+   document.form.text14.value = val+adhf;
+  }
+  function addone8(){
+   var val= Number(document.form.text16.value);
+   var adde=Number(document.form.but8.value);
+   document.form.text16.value = val+adde;
+  }
+ function addhalf8(){
+   var val= Number(document.form.text16.value);
+   var adhf=Number(document.form.half8.value);
+   document.form.text16.value = val+adhf;
+  }
+  function addone9(){
+   var val= Number(document.form.text18.value);
+   var adde=Number(document.form.but9.value);
+   document.form.text18.value = val+adde;
+  }
+ function addhalf9(){
+   var val= Number(document.form.text18.value);
+  var adhf=Number(document.form.half9.value);
+   document.form.text18.value = val+adhf;
+  }
+  function addone10(){
+   var val= Number(document.form.text20.value);
+   var adde=Number(document.form.but10.value);
+   document.form.text20.value = val+adde;
+  }
+ function addhalf10(){
+   var val= Number(document.form.text20.value);
+   var adhf=Number(document.form.half10.value);
+   document.form.text20.value = val+adhf;
+  }
+  
+ 
+ 
+ 
+ 
+ function result(){
+  var title=document.form.title.value;
+  var name1 = document.form.text1.value;
+  var name2 = document.form.text3.value;
+  var name3 = document.form.text5.value;
+  var name4 = document.form.text7.value;
+  var name5 = document.form.text9.value;
+  var name6= document.form.text11.value;
+  var name7= document.form.text13.value;
+  var name8= document.form.text15.value;
+  var name9= document.form.text17.value;
+  var name10= document.form.text19.value;
+  var scor1= Number(document.form.text2.value);
+  var scor2= Number(document.form.text4.value);
+  var scor3= Number(document.form.text6.value);
+  var scor4= Number(document.form.text8.value);
+  var scor5= Number(document.form.text10.value);
+  var scor6= Number(document.form.text12.value);
+  var scor7= Number(document.form.text14.value);
+  var scor8= Number(document.form.text16.value);
+  var scor9= Number(document.form.text18.value);
+  var scor10= Number(document.form.text20.value);
+ 
+   const valu = [scor1,scor2,scor3,scor4,scor5,scor6,scor7,scor8,scor9,scor10];
+   valu.sort(function(a, b){return a - b});
+   valu.reverse();
+   largest= valu[0];
+   switch(largest){
+    case scor1: winnername1=name1;break;
+    case scor2: winnername1=name2;break;
+    case scor3: winnername1=name3;break;
+    case scor4: winnername1=name4;break;
+    case scor5: winnername1=name5;break;
+    default: winnername1=name6;
+   }
+  
+  print1=name1+" : "+scor1;
+  print2=name2+" : "+scor2;
+  print3=name3+" : "+scor3;
+  print4=name4+" : "+scor4;
+  print5=name5+" : "+scor5;
+  print6=name6+" : "+scor6;
+  print7=name7+" : "+scor7;
+  print8=name8+" : "+scor8;
+  print9=name9+" : "+scor9;
+  print10=name10+" : "+scor10;
+  printer = "\n\n"+print1+"\n\n"+print2+"\n\n"+print3+"\n\n"+print4+"\n\n"+print5+"\n\n"+print6+"\n\n"+print7+"\n\n"+print8+"\n\n"+print9+"\n\n"+print10;
+  winner= "\n\n\n THE WINNER IS : "+ winnername1+ " { SCORE:"+largest+" }";
+   alert(winner+printer);
+   
+ }
+ 
+ function clearbut(){
+  var sc1= document.form.text2.value;
+   document.form.text2.value = " ";
+   var sc2= document.form.text4.value;
+   document.form.text4.value = " ";
+   var sc3= document.form.text6.value;
+   document.form.text6.value = " ";
+   var sc4= document.form.text8.value;
+   document.form.text8.value = " ";
+   var sc5= document.form.text10.value;
+   document.form.text10.value = " ";
+   var sc6= document.form.text12.value;
+   document.form.text12.value = " ";
+   var sc7= document.form.text14.value;
+   document.form.text14.value = " ";
+   var sc8= document.form.text16.value;
+   document.form.text16.value = " ";
+   var sc9= document.form.text18.value;
+   document.form.text18.value = " ";
+   var sc10= document.form.text20.value;
+   document.form.text20.value = " ";
+   
+   
+   
+ }
+ 
+  function incre()
+ {
+ var x = prompt("Enter the increment value");
+ document.form.but1.value="+"+x;
+ document.form.but2.value="+"+x;
+ document.form.but3.value="+"+x;
+ document.form.but4.value="+"+x;
+ document.form.but5.value="+"+x;
+ document.form.but6.value="+"+x;
+ document.form.but7.value="+"+x;
+  document.form.but8.value="+"+x;
+ document.form.but9.value="+"+x;
+  document.form.but10.value="+"+x;
+  var hf=x*(1/2);
+  document.form.half1.value=hf;
+  document.form.half2.value=hf;
+  document.form.half3.value=hf;
+  document.form.half4.value=hf;
+  document.form.half5.value=hf;
+  document.form.half6.value=hf;
+  document.form.half7.value=hf;
+  document.form.half8.value=hf;
+  document.form.half9.value=hf;
+  document.form.half10.value=hf;
+  
+ }
+ 
+ function rest()
+ {
+  document.form.but1.value="+"+1;
+  document.form.but2.value="+"+1;
+  document.form.but3.value="+"+1;
+  document.form.but4.value="+"+1;
+  document.form.but5.value="+"+1;
+  document.form.but6.value="+"+1;
+  document.form.but7.value="+"+1;
+  document.form.but8.value="+"+1;
+  document.form.but9.value="+"+1;
+  document.form.but10.value="+"+1;
+  document.form.half1.value=(1/2);
+  document.form.half2.value=(1/2);
+  document.form.half3.value=(1/2);
+  document.form.half4.value=(1/2);
+  document.form.half5.value=(1/2);
+  document.form.half6.value=(1/2);
+  document.form.half7.value=(1/2);
+  document.form.half8.value=(1/2);
+  document.form.half9.value=(1/2);
+  document.form.half10.value=(1/2);
+  document.form.minu1.value=-(1/2);
+ document.form.minu2.value=-(1/2);
+ document.form.minu3.value=-(1/2);
+ document.form.minu4.value=-(1/2);
+ document.form.minu5.value=-(1/2);
+ document.form.minu6.value=-(1/2);
+ document.form.minu7.value=-(1/2);
+ document.form.minu8.value=-(1/2);
+ document.form.minu9.value=-(1/2);
+ document.form.minu10.value=-(1/2);
+  
+ }
+ 
+  function decre()
+ { 
+  var x = prompt("Enter the decrement value : ");
+ document.form.minu1.value=-x;
+ document.form.minu2.value=-x;
+ document.form.minu3.value=-x;
+ document.form.minu4.value=-x;
+ document.form.minu5.value=-x;
+ document.form.minu6.value=-x;
+ document.form.minu7.value=-x;
+ document.form.minu8.value=-x;
+ document.form.minu9.value=-x;
+ document.form.minu10.value=-x;
+ 
+  
+ }
+ function color(){
+  let cl=document.form.clr.value;
+  document.body.style.backgroundColor = cl;
+  }
+  </script>
+   
+  <body bgcolor="lavender" leftmargin="40" topmargin=30>
+    <form name="form">
+      <h1 style="margin-left:20px;">Score Calculator</h1>
+      <br><br>
+    
+      1. <input type="text" name="text1" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text2" class="but2" readonly="true">
+     <input type=button name="but1"value="+1" onclick="addone1()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half1" value="0.5" onclick="addhalf1()" class="smbut"> &nbsp;
+     <input type="button" name="minu1"value="-0.5" onclick="minusehalf1()" class="smbut"> &nbsp;
+     <br><br>
+     2. <input type="text" name="text3" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text4" class="but2" readonly="true">
+     <input type=button name="but2" value="+1" onclick="addone2()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half2" value="0.5" onclick="addhalf2()" class="smbut"> &nbsp;
+     <input type="button" name="minu2"value="-0.5" onclick="minusehalf2()" class="smbut"> &nbsp;
+     <br><br>
+     3. <input type="text" name="text5" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text6" class="but2" readonly="true">
+     <input type=button name="but3" value="+1" onclick="addone3()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half3" value="0.5" onclick="addhalf3()" class="smbut"> &nbsp;
+     <input type="button" name="minu3"value="-0.5" onclick="minusehalf3()" class="smbut"> &nbsp;
+     <br><br>
+     4. <input type="text" name="text7" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text8" class="but2" readonly="true">
+     <input type=button name="but4" value="+1" onclick="addone4()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half4" value="0.5" onclick="addhalf4()" class="smbut"> &nbsp;
+     <input type="button" name="minu4"value="-0.5" onclick="minusehalf4()" class="smbut"> &nbsp;
+    <br><br>
+     5. <input type="text" name="text9" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text10" class="but2" readonly="true">
+     <input type=button name="but5"value="+1"onclick="addone5()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half5" value="0.5" onclick="addhalf5()" class="smbut"> &nbsp;
+     <input type="button" name="minu5" value="-0.5" onclick="minusehalf5()" class="smbut"> &nbsp;
+     <br><br>
+     6. <input type="text" name="text11" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text12" class="but2" readonly="true">
+     <input type=button name="but6"value="+1"onclick="addone6()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half6" value="0.5" onclick="addhalf6()" class="smbut"> &nbsp;
+     <input type="button" name="minu6"value="-0.5" onclick="minusehalf6()" class="smbut"> &nbsp;
+    
+     <br><br>
+     7. <input type="text" name="text13" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text14" class="but2" readonly="true">
+     <input type=button name="but7"value="+1"onclick="addone7()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half7" value="0.5" onclick="addhalf7()" class="smbut"> &nbsp;
+     <input type="button" name="minu7" value="-0.5" onclick="minusehalf7()" class="smbut"> &nbsp;
+ 
+     <br><br>
+     8. <input type="text" name="text15" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text16" class="but2" readonly="true">
+     <input type=button   name="but8"value="+1"onclick="addone8()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half8"value="0.5" onclick="addhalf8()" class="smbut"> &nbsp;
+     <input type="button" name="minu8"value="-0.5" onclick="minusehalf8()" class="smbut"> &nbsp;
+ 
+     <br><br>
+     9. <input type="text" name="text17" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text18" class="but2" readonly="true">
+     <input type=button  name="but9"value="+1"onclick="addone9()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half9"value="0.5" onclick="addhalf9()" class="smbut"> &nbsp;
+     <input type="button" name="minu9"value="-0.5" onclick="minusehalf9()" class="smbut"> &nbsp;
+ 
+     <br><br>
+    10<input type="text" name="text19" class="but"> &nbsp;&nbsp;
+     <input type="text" name="text20" class="but2" readonly="true">
+     <input type=button  name="but10" value="+1"onclick="addone10()" class="smbut">&nbsp;&nbsp;
+     <input type="button" name="half10"value="0.5" onclick="addhalf10()" class="smbut"> &nbsp;
+     <input type="button" name="minu10"value="-0.5" onclick="minusehalf10()" class="smbut"> &nbsp;
+   
+     <br><br><br><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="button" value=Result style= "font-size:20;" class=clr onclick="result()">&nbsp;
+      <input type="reset" style= "font-size:20;" class="clr" onclick="rest()"><br><br>
+     &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="button" value="ClearScores" style= "font-family:serif;" class=clrsp onclick="clearbut()">&nbsp; 
+     <button onclick="window.print()">Print this page</button>
+
+     </form>  
+     <div class="dropdown">
+  <button class="dropbtn">:</button>
+  <div class="dropdown-content">
+   <button class="dropbut" name="bot" onclick="incre()">Change Increment</button>
+   <button class="dropbut" name="bot" onclick="decre()">Change Decrement</button>
+   <button class="dropbut" name="bot" onclick="remove()">Add more rows</button>
+   <button class="dropbut" name="bot">Remove row</button>
+   <button class="dropbut" name="bot" onclick="color()">Change BackgroundColor</button>
+   
+  </div>
+</div>
+  <input type="color" id=color name=clr>
+     
+   
+  </body>
+</head></html>
